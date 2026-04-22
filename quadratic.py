@@ -21,7 +21,7 @@ def value_y(a, b, c, x):
 
 def to_string(a, b, c):
 
-    return (f"f(x) = {a} * X^2 + {b} * X + {c}")
+    return (f"f(x) = {a} * X^2  + {b} * X + {c}")
 
 
 def derivation(a, b, c):
