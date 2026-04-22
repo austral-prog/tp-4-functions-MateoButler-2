@@ -31,7 +31,7 @@ def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):
     Si son iguales, retorna "A".
     Debe USAR la función final_price para resolver el ejercicio.
     """
-    if final_price(price_a, qty_a, disc_a, tax_pct) >= final_price(price_b, disc_b, qty_b, tax_pct):
+    if final_price(price_a, qty_a, disc_a, tax_pct) <= final_price(price_b, qty_b, disc_b, tax_pct):
         return "A"
     else:
         return "B"

@@ -1,11 +1,11 @@
 # Replace the "ANSWER HERE" for your answer
 
 def roots(a, b, c):
+    discriminante = b**2 - 4 * a * c
+    if discriminante >= 0:
 
-    if (b**2 - 4 * a * c) >= 0:
-
-        r1 = (-1 * b + (b**2 - 4 * a * c )**0.5) / (2 * a)
-        r2 = (-1 * b - (b**2 - 4 * a * c )**0.5) / (2 * a)
+        r1 = (-1 * b + discriminante**0.5) / (2 * a)
+        r2 = (-1 * b - discriminante**0.5) / (2 * a)
 
         if r1 != r2:
             return (f"({r1}, {r2})")
@@ -26,4 +26,4 @@ def to_string(a, b, c):
 
 def derivation(a, b, c):
 
-    return (f"f'(x) = {2 * a}x + {b}")
+    return f"f'(x) = {2 * a}x + {b}"
