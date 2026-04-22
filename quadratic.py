@@ -19,7 +19,6 @@ def value_y(a, b, c, x):
 
     return a * x**2 + b * x + c
 
-
 def to_string(a, b, c):
 
     return (f"f(x) = {a} * X^2 + {b} * X + {c}")

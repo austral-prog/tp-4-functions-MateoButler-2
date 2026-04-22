@@ -35,4 +35,3 @@ def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):
         return "A"
     else:
         return "B"
-
