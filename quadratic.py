@@ -25,5 +25,18 @@ def to_string(a, b, c):
 
 
 def derivation(a, b, c):
+    der_a = 2 * a
+    der_b = b
 
-    return f"f'(x) = {2 * a}x + {b}"
+    # Caso: f'(x) = 0
+    if der_a == 0 and der_b == 0:
+        return "f'(x) = 0"
+    # Caso: f'(x) = constante
+    if der_a == 0:
+        return f"f'(x) = {der_b}"
+    # Caso: f'(x) = A * X
+    if der_b == 0:
+        return f"f'(x) = {der_a} * X"
+
+    # Caso completo: f'(x) = A * X + B
+    return f"f'(x) = {der_a} * X + {der_b}"
